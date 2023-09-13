@@ -7,7 +7,7 @@ dotenv.config()
 
 console.log('Starting')
 
-cron.schedule('* * * * *', () => {
+cron.schedule('0 15 * * *', () => {
 
     console.log('Controller is running');
     const connectionUrl = 'postgres://fhkusyjn:gjzNNlfVQ2xnHMrKTVl7mPr6O5rYCGbE@lallah.db.elephantsql.com/fhkusyjn'; //elephant sql connection url
