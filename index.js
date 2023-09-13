@@ -3,10 +3,7 @@ import Controller from './Controller.js';
 
 const app = express();
 
-app.get('/', (request, response) => {
-    Controller();
-    response.send('Server is running successfully')
-})
+app.get('/', Controller)
 
 const PORT = process.env.PORT || 8211;
 
