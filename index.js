@@ -1,5 +1,5 @@
 import express, { response } from 'express';
-import Controller from './Controller';
+import Controller from './Controller.js';
 
 const app = express();
 
