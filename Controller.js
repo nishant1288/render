@@ -15,7 +15,7 @@ const Controller = () => {
 
         let client = new pg.Client(connectionUrl); //connection created
 
-        client.connect((error) => { //connecting with database
+        client.connect((error) => { //connecting with database elphant url
             if (error) {
                 return console.error('Could not connect to POSTGRES', error)
             }
