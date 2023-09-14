@@ -13,7 +13,7 @@ const Controller = () => {
         console.log('Controller is running');
         const connectionUrl = 'postgres://fhkusyjn:gjzNNlfVQ2xnHMrKTVl7mPr6O5rYCGbE@lallah.db.elephantsql.com/fhkusyjn'; //elephant sql connection url
 
-        let client = new pg.Client(connectionUrl); //creating connection
+        let client = new pg.Client(connectionUrl); //connection created
 
         client.connect((error) => { //connecting with database
             if (error) {
